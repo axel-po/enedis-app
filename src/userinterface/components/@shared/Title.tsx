@@ -8,7 +8,7 @@ type TitleProps = {
 
 const Title: React.FC<TitleProps> = ({ level = "h2", children }) => {
   const titleStyles = {
-    h1: "text-4xl font-bold text-gray-900",
+    h1: "text-5xl font-bold text-gray-900",
     h2: "text-3xl font-semibold text-gray-800",
     h3: "text-2xl font-medium text-gray-700",
     h4: "text-xl font-normal text-gray-600",

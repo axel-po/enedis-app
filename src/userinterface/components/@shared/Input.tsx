@@ -16,9 +16,9 @@ const Input: React.FC<InputProps> = ({
     <View className="space-y-2">
       <Text className="text-base text-gray-100 font-pmedium mb-3">{label}</Text>
 
-      <View className="w-full h-16 px-4 bg-black-100 rounded-xl border border-gray focus:border-black flex flex-row items-center">
+      <View className="w-full h-[50px] leading-[56px] px-4 bg-black-100 rounded-xl border border-gray focus:border-black flex flex-row items-center">
         <TextInput
-          className="flex-1 font-psemibold text-base"
+          className="w-full text-base"
           placeholderTextColor="#7B7B8B"
           placeholder={placeholder}
           keyboardType={inputType}

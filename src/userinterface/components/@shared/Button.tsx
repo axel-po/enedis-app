@@ -2,7 +2,7 @@ import React from "react";
 import { Text, TouchableOpacity } from "react-native";
 
 interface ButtonProps {
-  title: string;
+  children: React.ReactNode;
   handlePress: () => void;
   containerStyles?: string;
   textStyles?: string;
@@ -10,7 +10,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({
-  title,
+  children,
   handlePress,
   containerStyles,
   textStyles,
@@ -20,13 +20,13 @@ const Button: React.FC<ButtonProps> = ({
     <TouchableOpacity
       onPress={handlePress}
       activeOpacity={0.7}
-      className={`bg-secondary rounded-xl min-h-[62px] justify-center items-center ${containerStyles} ${
+      className={`bg-primary rounded-full h-[40px] leading-[40px] max-h-[40px] justify-center items-center ${containerStyles} ${
         isLoading ? "opacity-50" : ""
       }`}
       disabled={isLoading}
     >
-      <Text className={`text-primary font-psemibold text-lg ${textStyles}`}>
-        {title}
+      <Text className={`text-black font-bold text-lg ${textStyles}`}>
+        {children}
       </Text>
     </TouchableOpacity>
   );
