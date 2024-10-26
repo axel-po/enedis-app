@@ -1,13 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import LoginForm from "@/components/auth/LoginForm";
+import React from "react";
 
 const SignIn = () => {
   return (
-    <View>
-      <Text>SignIn</Text>
-    </View>
-  )
-}
+    <>
+      <LoginForm />
+    </>
+  );
+};
 
-export default SignIn
-
+export default SignIn;

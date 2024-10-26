@@ -8,8 +8,8 @@ import Title from "../@shared/Title";
 const RegisterForm = () => {
   return (
     <View className="">
-      <Link href="/dashboard" className="text-lg ">
-        go to dashboard
+      <Link href="/" className="text-lg ">
+        Retour
       </Link>
       <Title level="h1">Création d’une organisation</Title>
 
@@ -17,7 +17,7 @@ const RegisterForm = () => {
         <Input label="Nom" placeholder="Nom" />
         <Input label="Email" placeholder="Email" inputType="email-address" />
 
-        <Button title="Créer" handlePress={() => {}} />
+        <Button handlePress={() => {}}>Créer</Button>
       </View>
     </View>
   );

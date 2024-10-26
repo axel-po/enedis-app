@@ -5,9 +5,7 @@ import { StyleSheet, View } from "react-native";
 const SignUp = () => {
   return (
     <View>
-      <View className="w-[90%] h-screen">
-        <RegisterForm />
-      </View>
+      <RegisterForm />
     </View>
   );
 };
